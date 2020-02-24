@@ -36,13 +36,6 @@ var seattle = {
         var ulA = document.createElement('ul');
         cool.appendChild(ulA);
 
-        // var li = document.createElement('li')
-        // ulA.appendChild(li)
-
-
-
-        // pA.appendChild(ulA);
-
         for (var i = 0; i <= hourArr.length; i++) {
             var li = document.createElement('li');
             ulA.appendChild(li);
@@ -86,17 +79,10 @@ var tokyo = {
         hE.textContent = `Tokyo`;
 
 
-        // var mainA = document.getElementsByTagName('main');
         var cool = document.getElementById('cool')
         var ulA = document.createElement('ul');
         cool.appendChild(ulA);
 
-        // var li = document.createElement('li')
-        // ulA.appendChild(li)
-
-
-
-        // pA.appendChild(ulA);
 
         for (var i = 0; i <= hourArr.length; i++) {
             var li = document.createElement('li');
@@ -140,17 +126,10 @@ var dubai = {
         hE.textContent = `Dubai`;
 
 
-        // var mainA = document.getElementsByTagName('main');
         var cool = document.getElementById('cool')
         var ulA = document.createElement('ul');
         cool.appendChild(ulA);
 
-        // var li = document.createElement('li')
-        // ulA.appendChild(li)
-
-
-
-        // pA.appendChild(ulA);
 
         for (var i = 0; i <= hourArr.length; i++) {
             var li = document.createElement('li');
@@ -243,7 +222,6 @@ var lima = {
         hE.textContent = `Lima`;
 
 
-        // var mainA = document.getElementsByTagName('main');
         var cool = document.getElementById('cool')
         var ulA = document.createElement('ul');
         cool.appendChild(ulA);
@@ -260,3 +238,4 @@ var lima = {
 }
 lima.random();
 lima.render();
+
