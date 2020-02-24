@@ -1,4 +1,4 @@
-var hourArr = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm',];
+var hourArr = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
 
 
@@ -11,11 +11,12 @@ var seattle = {
     calculate: 0,
     CoArr: [],
     add: 0,
+    // count :0,
 
     random: function () {
 
-        for (var i = 0; i <= hourArr.length; i++) {
-            this.calculate = Math.floor((Math.random() * (this.max - this.min ) + this.min) * this.average);
+        for (var i = 0; i < hourArr.length; i++) {
+            this.calculate =Math.floor((Math.random() * (this.max - this.min ) + this.min) * this.average);
             this.CoArr[i] = this.calculate;
             this.add = this.add + this.calculate;
         }
@@ -36,7 +37,7 @@ var seattle = {
         var ulA = document.createElement('ul');
         cool.appendChild(ulA);
 
-        for (var i = 0; i <= hourArr.length; i++) {
+        for (var i = 0; i <hourArr.length; i++) {
             var li = document.createElement('li');
             ulA.appendChild(li);
             li.textContent = `${hourArr[i]} : ${this.CoArr[i]} cookies`;
@@ -61,11 +62,11 @@ var tokyo = {
 
     random: function () {
 
-        for (var i = 0; i <= hourArr.length; i++) {
+        for (var i = 0; i < hourArr.length; i++) {
             this.calculate = Math.floor(Math.random() * (this.max - this.min) + this.min); 
             this.cookienum= Math.floor( this.calculate * this.average);
             this.CoArr[i] = this.cookienum;
-            this.add = this.add + this.cookienum;
+            this.add =this.add + this.cookienum;
         }
 
         console.log(hourArr, this.CoArr, this.add);
@@ -84,7 +85,7 @@ var tokyo = {
         cool.appendChild(ulA);
 
 
-        for (var i = 0; i <= hourArr.length; i++) {
+        for (var i = 0; i < hourArr.length; i++) {
             var li = document.createElement('li');
             ulA.appendChild(li);
             li.textContent = `${hourArr[i]} : ${this.CoArr[i]} cookies`;
@@ -109,7 +110,7 @@ var dubai = {
 
     random: function () {
 
-        for (var i = 0; i <= hourArr.length; i++) {
+        for (var i = 0; i < hourArr.length; i++) {
             this.calculate = Math.floor((Math.random() * (this.max - this.min + 1) + this.min) * this.average);
             this.CoArr[i] = this.calculate;
             this.add = this.add + this.calculate;
@@ -131,7 +132,7 @@ var dubai = {
         cool.appendChild(ulA);
 
 
-        for (var i = 0; i <= hourArr.length; i++) {
+        for (var i = 0; i <hourArr.length; i++) {
             var li = document.createElement('li');
             ulA.appendChild(li);
             li.textContent = `${hourArr[i]} : ${this.CoArr[i]} cookies`;
@@ -154,7 +155,7 @@ var paris = {
 
     random: function () {
 
-        for (var i = 0; i <= hourArr.length; i++) {
+        for (var i = 0; i <hourArr.length; i++) {
             this.calculate = Math.floor(Math.random() * (this.max - this.min) + this.min); 
             this.cookienum= Math.floor( this.calculate * this.average);
             this.CoArr[i] = this.cookienum;
@@ -179,7 +180,7 @@ var paris = {
 
   
     
-        for (var i = 0; i <= hourArr.length; i++) {
+        for (var i = 0; i < hourArr.length; i++) {
             var li = document.createElement('li');
             ulA.appendChild(li);
             li.textContent = `${hourArr[i]} : ${this.CoArr[i]} cookies`;
@@ -204,7 +205,7 @@ var lima = {
 
     random: function () {
 
-        for (var i = 0; i <= hourArr.length; i++) {
+        for (var i = 0; i <hourArr.length; i++) {
             this.calculate = Math.floor(Math.random() * (this.max - this.min) + this.min); 
             this.cookienum= Math.floor( this.calculate * this.average);
             this.CoArr[i] = this.cookienum;
@@ -228,7 +229,7 @@ var lima = {
 
      
 
-        for (var i = 0; i <= hourArr.length; i++) {
+        for (var i = 0; i <hourArr.length; i++) {
             var li = document.createElement('li');
             ulA.appendChild(li);
             li.textContent = `${hourArr[i]} : ${this.CoArr[i]} cookies`;
