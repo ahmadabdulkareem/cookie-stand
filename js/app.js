@@ -95,24 +95,45 @@ for (var i = 0; i < shops.length; i++) {
     shops[i].render();
 }
 
-function footerT(){
+
+function footerT() {
     var totalA = document.createElement('tr');
     tableE1.appendChild(totalA);
-    var td5= document.createElement('td');
+    var td5 = document.createElement('td');
     totalA.appendChild(td5);
     td5.textContent = 'Totals';
-    for(var k=0; k<hourArr.length; k++){
-        var td6= document.createElement('td');
-        totalA.appendChild(td6);
-        td6.textContent= seattle.CoArr[k] + tokyo.CoArr[k] + dubai.CoArr[k] + paris.CoArr[k] + lima.CoArr[k];
+  
+    totalOfTotal =0;
+    for (var k = 0; k < hourArr.length; k++) {
+        var hourTotal =0;
+
+        for (var j = 0; j<shops.length; j++) {
+            hourTotal+= shops[j].CoArr[k];
+        }
+        totalOfTotal += hourTotal;
+         var td6 = document.createElement('td');
+         totalA.appendChild(td6);
+        td6.textContent = hourTotal;
+
     
     }
-    var td7 = document.createElement('td');
+    // var totalOfTotal= 0;
+    // for(var i=0; i< shops.length; i++){
+    //     totalOfTotal+= shops[i].add;
+    // }
+    var td7 =document.createElement('td');
     totalA.appendChild(td7);
-    td7.textContent = seattle.add + tokyo.add + dubai.add + paris.add + lima.add;
-
+    td7.textContent= totalOfTotal;
+    
 }
 footerT();
+// td6.textContent = seattle.CoArr[k] + tokyo.CoArr[k] + dubai.CoArr[k] + paris.CoArr[k] + lima.CoArr[k];
+
+
+
+
+
+// td7.textContent = seattle.add + tokyo.add + dubai.add + paris.add + lima.add;
 
 
 
