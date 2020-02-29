@@ -1,0 +1,28 @@
+#table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  body{
+      height: 1800px;
+      /* text-align: center; */
+  }
+  header{
+    background-color: rgb(140, 130, 148.3);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+  }
+  li, a { 
+      text-decoration: none;
+      list-style: none;
+      color: wheat;
+}
+  main{
+      height: 1000px;
+  }
+  
