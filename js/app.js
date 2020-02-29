@@ -5,9 +5,9 @@
 
 var hourArr = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var shops = [];
-var articleE1 = document.getElementById('articleE1');
-var tableE1 = document.createElement('table');
-articleE1.appendChild(tableE1);
+var tableE1 = document.getElementById('table');
+// var tableE1 = document.createElement('table');
+// articleE1.appendChild(tableE1);
 
 function CookieSale(location, min, max, average) {
     this.nameOf = location;
@@ -128,11 +128,6 @@ function footerT() {
 }
 footerT();
 // td6.textContent = seattle.CoArr[k] + tokyo.CoArr[k] + dubai.CoArr[k] + paris.CoArr[k] + lima.CoArr[k];
-
-
-
-
-
 // td7.textContent = seattle.add + tokyo.add + dubai.add + paris.add + lima.add;
 
 
