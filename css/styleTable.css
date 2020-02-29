@@ -1,6 +1,7 @@
 #table {
     border-collapse: collapse;
     width: 100%;
+    background-color: rgb(249, 255, 137.3);
   }
   
   th, td {
