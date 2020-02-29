@@ -8,7 +8,7 @@
     padding: 8px;
   }
   body{
-      height: 1800px;
+      height: auto;
       /* text-align: center; */
   }
   header{
@@ -23,6 +23,6 @@
       color: wheat;
 }
   main{
-      height: 1000px;
+      height: auto;
   }
   
