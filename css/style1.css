@@ -10,16 +10,21 @@ header{
     /* height: 50px; */
     width: 700px;
     background-color: rgb(140, 130, 148.3);
-    color: white;
     border-radius: 50px;
     text-align: center;
     
     
 }
+#headerh1 {
+    font-family: Simonetta;
+    color: lemonchiffon;
+}
+
 li, a{
     text-decoration: none;
     list-style: none;
     color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
 }
 main{
     text-align: center;
@@ -43,6 +48,8 @@ footer{
     /* position: relative; */
     padding: 0px;
     margin-top: 555em;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
 
     /* margin-block-start: 0em;
     margin-block-end: 0em;
@@ -56,4 +63,9 @@ footer{
 #family {
     width: 400px;
     height:300px ;
+}
+
+figcaption{
+    background-color: whitesmoke;
+    border-radius: 50px;
 }
